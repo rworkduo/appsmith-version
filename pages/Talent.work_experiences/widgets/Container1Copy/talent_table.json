@@ -195,7 +195,7 @@
   "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
-  "isVisibleSearch": false,
+  "isVisibleSearch": true,
   "key": "zba5qel0au",
   "label": "Data",
   "labelTextSize": "0.875rem",
