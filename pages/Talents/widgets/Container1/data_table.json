@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 85,
+  "bottomRow": 104,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -23,6 +23,8 @@
   },
   "columnOrder": [
     "id",
+    "email",
+    "full_name",
     "personal_information",
     "created_at",
     "updated_at",
@@ -30,8 +32,6 @@
     "workspace_id",
     "custom_field_data",
     "address",
-    "email",
-    "full_name",
     "linkedin",
     "links",
     "phone",
@@ -40,15 +40,17 @@
     "professional_summary",
     "tags",
     "phones",
-    "external_source",
-    "customColumn1"
+    "external_source"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1744184686504,
+  "columnUpdatedAt": 1744188083932,
+  "columnWidthMap": {
+    "personal_information": 449
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -86,9 +88,6 @@
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonLabel"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -96,9 +95,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.id.computedValue"
@@ -160,16 +156,10 @@
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
       "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
     {
       "key": "onPageChange"
     },
@@ -270,30 +260,6 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "customColumn1": {
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
-      "enableFilter": true,
-      "enableSort": true,
-      "id": "customColumn1",
-      "index": 5,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Delete",
-      "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "sticky": "",
       "width": 150
     },
     "custom_field_data": {
@@ -557,7 +523,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "id",
+      "label": "talent_id",
       "notation": "standard",
       "originalId": "id",
       "sticky": "",

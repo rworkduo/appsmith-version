@@ -5,7 +5,7 @@
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 86,
+  "bottomRow": 107,
   "bottomRowBeforeCollapse": 86,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
@@ -278,13 +278,22 @@
       "key": "schema.__root_schema__.children.external_source.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.dynamic_data.cellBorderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.personal_information.cellBorderRadius"
     },
     {
+      "key": "schema.__root_schema__.children.dynamic_data.cellBorderRadius"
+    },
+    {
       "key": "schema.__root_schema__.children.custom_field_data.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -360,7 +369,7 @@
           "label": "Address",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "address",
-          "position": 6
+          "position": 9
         },
         "created_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -381,8 +390,30 @@
           "label": "Created At",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "created_at",
-          "position": 1,
+          "position": 4,
           "sourceData": "2025-03-14T04:18:35Z"
+        },
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "talent_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (data_table.selectedRow.id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Talent_id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "customField1",
+          "position": 0,
+          "sourceData": ""
         },
         "custom_field_data": {
           "accessor": "custom_field_data",
@@ -402,7 +433,7 @@
           "label": "Custom Field Data",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "custom_field_data",
-          "position": 5,
+          "position": 8,
           "sourceData": {}
         },
         "custom_field_execute_at": {
@@ -424,7 +455,7 @@
           "label": "Custom Field Execute At",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "custom_field_execute_at",
-          "position": 13,
+          "position": 14,
           "sourceData": "2025-03-14T05:18:38Z"
         },
         "deleted_at": {
@@ -446,7 +477,7 @@
           "label": "Deleted At",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "deleted_at",
-          "position": 12,
+          "position": 13,
           "sourceData": "2025-03-17T06:37:02Z"
         },
         "dynamic_data": {
@@ -467,7 +498,7 @@
           "label": "Dynamic Data",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "dynamic_data",
-          "position": 3,
+          "position": 6,
           "sourceData": {}
         },
         "email": {
@@ -489,7 +520,7 @@
           "label": "Email",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "email",
-          "position": 7,
+          "position": 1,
           "sourceData": "kelly602summersummer@gmail.com"
         },
         "external_source": {
@@ -511,7 +542,7 @@
           "label": "External Source",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "external_source",
-          "position": 17
+          "position": 18
         },
         "full_name": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -532,7 +563,7 @@
           "label": "Full Name",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "full_name",
-          "position": 8,
+          "position": 2,
           "sourceData": "Hoi Ki (Kelly) Chan"
         },
         "linkedin": {
@@ -554,7 +585,7 @@
           "label": "Linkedin",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "linkedin",
-          "position": 9,
+          "position": 10,
           "sourceData": "www.linkedin.com/in/kelly-hoi-ki-chan-1bb275194"
         },
         "links": {
@@ -563,35 +594,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.links))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "links",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Links",
           "labelTextSize": "0.875rem",
-          "options": [
-            {
-              "label": "Blue",
-              "value": "BLUE"
-            },
-            {
-              "label": "Green",
-              "value": "GREEN"
-            },
-            {
-              "label": "Red",
-              "value": "RED"
-            }
-          ],
           "originalIdentifier": "links",
-          "position": 10,
-          "serverSideFiltering": false,
-          "sourceData": []
+          "position": 11,
+          "sourceData": ""
         },
         "personal_information": {
           "accessor": "personal_information",
@@ -611,7 +628,7 @@
           "label": "Personal Information",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "personal_information",
-          "position": 0,
+          "position": 3,
           "sourceData": {}
         },
         "phone": {
@@ -633,7 +650,7 @@
           "label": "Phone",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "phone",
-          "position": 11,
+          "position": 12,
           "sourceData": "+852 6251 6295"
         },
         "phones": {
@@ -655,7 +672,7 @@
           "label": "Phones",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "phones",
-          "position": 16
+          "position": 17
         },
         "professional_summary": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -676,7 +693,7 @@
           "label": "Professional Summary",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "professional_summary",
-          "position": 14,
+          "position": 15,
           "sourceData": "A graduated student of BA (Hons) in English for Business and Professional Communication in PolyU with experience in Administrative/ Customer Service and Influencer management at well-known MNC, Local Fashion Company, and luxury e-commerce start-up. Experienced on social media platforms such as Facebook, Instagram, and YouTube. Comfortable working with a team and independently in a fast paced environment. Effective communicator with a creative mind and keen attention for detail. Willing to learn and seeking opportunities to participate in the Fashion & Beauty industry with passion."
         },
         "tags": {
@@ -698,7 +715,7 @@
           "label": "Tags",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "tags",
-          "position": 15
+          "position": 16
         },
         "updated_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -719,7 +736,7 @@
           "label": "Updated At",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "updated_at",
-          "position": 2,
+          "position": 5,
           "sourceData": "2025-03-14T04:18:35Z"
         },
         "workspace_id": {
@@ -734,14 +751,14 @@
           "iconAlign": "left",
           "identifier": "workspace_id",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Workspace Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "workspace_id",
-          "position": 4,
+          "position": 7,
           "sourceData": "cm7tunekk0003u2j27oag8142"
         }
       },
