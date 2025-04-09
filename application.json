@@ -18,15 +18,15 @@
   "icon": "dollar",
   "pages": [
     {
-      "id": "Person.companies",
+      "id": "Companies",
       "isDefault": false
     },
     {
-      "id": "Person.talents",
+      "id": "Talents",
       "isDefault": false
     },
     {
-      "id": "Person.work_experiences",
+      "id": "Talent.work_experiences",
       "isDefault": true
     }
   ],
