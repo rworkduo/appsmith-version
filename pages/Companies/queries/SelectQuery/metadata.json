@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM person.\"companies\"\nWHERE \"name\" ilike '%{{data_table.searchText || \"\"}}%'\nAND deleted_at is Null\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM person.\"companies\"\nWHERE (\n    \"name\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"id\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"id\" = '{{data_table.searchText || \"\"}}'\n) \nAND deleted_at is Null\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

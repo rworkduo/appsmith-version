@@ -212,15 +212,6 @@
       "key": "schema.__root_schema__.children.company_id.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.resume_detail.children.tenure.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.tenure.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.tenure.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.resume_detail.children.company.defaultValue"
     },
     {
@@ -652,28 +643,6 @@
               "originalIdentifier": "start_date",
               "position": 5,
               "sourceData": "02/2020"
-            },
-            "tenure": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "accessor": "tenure",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "number",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.resume_detail.tenure))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "fieldType": "Number Input",
-              "iconAlign": "left",
-              "identifier": "tenure",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "Tenure",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "tenure",
-              "position": 0,
-              "sourceData": 1
             }
           },
           "dataType": "object",
