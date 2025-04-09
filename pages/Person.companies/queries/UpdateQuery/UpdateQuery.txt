@@ -1,0 +1,13 @@
+UPDATE person."companies" SET
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		"type" = '{{update_form.fieldState.type.isVisible ? update_form.formData.type : update_form.sourceData.type}}',
+    "tags" = '{{update_form.fieldState.tags.isVisible ? JSON.parse(update_form.formData.tags) : update_form.sourceData.tags}}',
+		"is_active" = '{{update_form.fieldState.is_active.isVisible ? update_form.formData.is_active : update_form.sourceData.is_active}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}',
+		"updated_at" = '{{update_form.fieldState.updated_at.isVisible ? update_form.formData.updated_at : update_form.sourceData.updated_at}}',
+		"deleted_at" = '{{update_form.fieldState.deleted_at.isVisible ? update_form.formData.deleted_at : update_form.sourceData.deleted_at}}',
+		"emails" = '{{update_form.fieldState.emails.isVisible ? update_form.formData.emails : update_form.sourceData.emails}}',
+		"employee_count" = '{{update_form.fieldState.employee_count.isVisible ? update_form.formData.employee_count : update_form.sourceData.employee_count}}',
+		"employee_growth_rate" = '{{update_form.fieldState.employee_growth_rate.isVisible ? update_form.formData.employee_growth_rate : update_form.sourceData.employee_growth_rate}}',
+		"founded_year" = '{{update_form.fieldState.founded_year.isVisible ? update_form.formData.founded_year : update_form.sourceData.founded_year}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

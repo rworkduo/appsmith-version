@@ -1,0 +1,5 @@
+SELECT person."talents".id as id, * FROM person."talents" RIGHT JOIN person."work_experiences" as we ON we.talent_id = person."talents".id
+WHERE "company_id" = '{{data_table.selectedRow.id}}' AND "full_name" ilike '%{{talents_matchcompany.searchText || ""}}%' AND person."talents".deleted_at is NULL
+ORDER BY person."talents"."{{talents_matchcompany.sortOrder.column || 'id'}}" {{talents_matchcompany.sortOrder.order || 'ASC'}}
+LIMIT {{talents_matchcompany.pageSize}}
+OFFSET {{(talents_matchcompany.pageNo - 1) * talents_matchcompany.pageSize}};

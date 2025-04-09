@@ -1,0 +1,28 @@
+INSERT INTO person."talents" (
+	"id",
+	"email",
+	"created_at",
+	"updated_at",
+	"dynamic_data",
+	"personal_information",
+	"workspace_id",
+	"custom_field_data",
+	"address",
+	"full_name",
+	"linkedin",
+	"links"
+)
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.email}}',
+	'{{insert_form.formData.created_at}}',
+	'{{insert_form.formData.updated_at}}',
+	'{{insert_form.formData.dynamic_data}}',
+	'{{insert_form.formData.personal_information}}',
+	'{{insert_form.formData.workspace_id}}',
+	'{{insert_form.formData.custom_field_data}}',
+	'{{insert_form.formData.address}}',
+	'{{insert_form.formData.full_name}}',
+	'{{insert_form.formData.linkedin}}',
+	'{{insert_form.formData.links}}'
+);

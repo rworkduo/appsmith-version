@@ -1,0 +1,28 @@
+INSERT INTO person."companies" (
+	"id",
+	"name",
+	"type",
+	"tags",
+	"is_active",
+	"created_at",
+	"updated_at",
+	"deleted_at",
+	"emails",
+	"employee_count",
+	"employee_growth_rate",
+	"founded_year"
+)
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.type}}',
+	'{{insert_form.formData.tags}}',
+	'{{insert_form.formData.is_active}}',
+	'{{insert_form.formData.created_at}}',
+	'{{insert_form.formData.updated_at}}',
+	'{{insert_form.formData.deleted_at}}',
+	'{{insert_form.formData.emails}}',
+	'{{insert_form.formData.employee_count}}',
+	'{{insert_form.formData.employee_growth_rate}}',
+	'{{insert_form.formData.founded_year}}'
+);

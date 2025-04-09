@@ -1,0 +1,12 @@
+UPDATE person."work_experiences" SET
+		"talent_id" = '{{update_form.fieldState.talent_id.isVisible ? update_form.formData.talent_id : update_form.sourceData.talent_id}}',
+		"role_id" = '{{update_form.fieldState.role_id.isVisible ? update_form.formData.role_id : update_form.sourceData.role_id}}',
+    "start_date" = '{{update_form.fieldState.start_date.isVisible ? update_form.formData.start_date : update_form.sourceData.start_date}}',
+		"end_date" = '{{update_form.fieldState.end_date.isVisible ? update_form.formData.end_date : update_form.sourceData.end_date}}',
+		"resume_detail" = '{{update_form.fieldState.resume_detail.isVisible ? update_form.formData.resume_detail : update_form.sourceData.resume_detail}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}',
+		"updated_at" = '{{update_form.fieldState.updated_at.isVisible ? update_form.formData.updated_at : update_form.sourceData.updated_at}}',
+		"deleted_at" = '{{update_form.fieldState.deleted_at.isVisible ? update_form.formData.deleted_at : update_form.sourceData.deleted_at}}',
+		"index" = '{{update_form.fieldState.index.isVisible ? update_form.formData.index : update_form.sourceData.index}}',
+		"company_id" = '{{update_form.fieldState.company_id.isVisible ? update_form.formData.company_id : update_form.sourceData.company_id}}'
+WHERE "id" = {{data_table.selectedRow.id}};

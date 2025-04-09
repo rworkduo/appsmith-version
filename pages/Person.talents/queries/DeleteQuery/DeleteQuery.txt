@@ -1,0 +1,2 @@
+DELETE FROM person."talents"
+  WHERE "id" = {{data_table.triggeredRow.id}};

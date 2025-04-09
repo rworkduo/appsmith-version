@@ -1,0 +1,24 @@
+INSERT INTO person."work_experiences" (
+	"id",
+	"talent_id",
+	"role_id",
+	"start_date",
+	"end_date",
+	"resume_detail",
+	"created_at",
+	"updated_at",
+	"deleted_at",
+	"index",
+	"company_id")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.talent_id}}',
+	'{{insert_form.formData.role_id}}',
+	'{{insert_form.formData.start_date}}',
+	'{{insert_form.formData.end_date}}',
+	'{{insert_form.formData.resume_detail}}',
+	'{{insert_form.formData.created_at}}',
+	'{{insert_form.formData.updated_at}}',
+	'{{insert_form.formData.deleted_at}}',
+	'{{insert_form.formData.index}}',
+	'{{insert_form.formData.company_id}}');
