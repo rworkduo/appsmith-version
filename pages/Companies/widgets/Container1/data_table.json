@@ -609,7 +609,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "id",
+      "label": "company_id",
       "notation": "standard",
       "originalId": "id",
       "sticky": "",

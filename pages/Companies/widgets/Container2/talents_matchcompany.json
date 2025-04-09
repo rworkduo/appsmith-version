@@ -32,6 +32,8 @@
   },
   "columnOrder": [
     "id",
+    "full_name",
+    "email",
     "created_at",
     "updated_at",
     "dynamic_data",
@@ -39,8 +41,6 @@
     "workspace_id",
     "custom_field_data",
     "address",
-    "email",
-    "full_name",
     "linkedin",
     "links",
     "phone",
@@ -52,7 +52,7 @@
     "external_source",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1744187609305,
+  "columnUpdatedAt": 1744187883219,
   "columnWidthMap": {
     "talent_id": 227,
     "workspace_id": 242
@@ -562,7 +562,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "id",
+      "label": "talent_id",
       "notation": "standard",
       "originalId": "id",
       "sticky": "",

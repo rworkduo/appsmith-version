@@ -398,6 +398,9 @@
       "key": "schema.__root_schema__.children.id.accentColor"
     },
     {
+      "key": "schema.__root_schema__.children.is_active.borderRadius"
+    },
+    {
       "key": "schema.__root_schema__.children.social_profiles.accentColor"
     }
   ],
@@ -507,7 +510,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.emails))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -521,7 +524,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "emails",
           "position": 8,
-          "sourceData": []
+          "sourceData": ""
         },
         "employee_count": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -592,7 +595,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.funding_details))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -606,7 +609,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "funding_details",
           "position": 12,
-          "sourceData": []
+          "sourceData": ""
         },
         "funding_stages": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -614,22 +617,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.funding_stages))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "funding_stages",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Funding Stages",
           "labelTextSize": "0.875rem",
-          "options": "",
           "originalIdentifier": "funding_stages",
           "position": 13,
-          "serverSideFiltering": false,
-          "sourceData": []
+          "sourceData": ""
         },
         "headline": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -719,22 +721,24 @@
         "is_active": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "is_active",
-          "alignWidget": "LEFT",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "boolean",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_active))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Switch",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "is_active",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Is Active",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_active",
           "position": 4,
-          "sourceData": true
+          "sourceData": ""
         },
         "last_enriched_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -805,7 +809,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.naics_codes))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -819,7 +823,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "naics_codes",
           "position": 20,
-          "sourceData": []
+          "sourceData": ""
         },
         "name": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -849,7 +853,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.phones))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -863,7 +867,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "phones",
           "position": 21,
-          "sourceData": []
+          "sourceData": ""
         },
         "sic_codes": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -871,7 +875,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.sic_codes))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -885,7 +889,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "sic_codes",
           "position": 22,
-          "sourceData": []
+          "sourceData": ""
         },
         "size": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -914,22 +918,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.social_profiles))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "social_profiles",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Social Profiles",
           "labelTextSize": "0.875rem",
-          "options": "",
           "originalIdentifier": "social_profiles",
           "position": 23,
-          "serverSideFiltering": false,
-          "sourceData": []
+          "sourceData": ""
         },
         "stock_exchange": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1021,7 +1024,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tags))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -1035,16 +1038,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "tags",
           "position": 3,
-          "sourceData": [
-            "predictive analytics",
-            "machine learning",
-            "data science",
-            "custom software development",
-            "mlops",
-            "devops",
-            "business intelligence",
-            "model explainability"
-          ]
+          "sourceData": ""
         },
         "type": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1116,7 +1110,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.website_alias))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -1130,7 +1124,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "website_alias",
           "position": 29,
-          "sourceData": []
+          "sourceData": ""
         }
       },
       "dataType": "object",
