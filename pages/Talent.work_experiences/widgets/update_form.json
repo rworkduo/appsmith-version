@@ -212,6 +212,15 @@
       "key": "schema.__root_schema__.children.company_id.accentColor"
     },
     {
+      "key": "schema.__root_schema__.children.workspace_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.workspace_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.workspace_id.accentColor"
+    },
+    {
       "key": "schema.__root_schema__.children.resume_detail.children.company.defaultValue"
     },
     {
@@ -285,15 +294,6 @@
     },
     {
       "key": "schema.__root_schema__.children.resume_detail.cellBorderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.workspace_id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.workspace_id.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.workspace_id.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -468,7 +468,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "index",
           "position": 4,
-          "sourceData": 1
+          "sourceData": 0
         },
         "resume_detail": {
           "accessor": "resume_detail",
@@ -496,8 +496,8 @@
               "label": "Company",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "company",
-              "position": 1,
-              "sourceData": "UBER HONG KONG- UBER EATS"
+              "position": 0,
+              "sourceData": "SITA"
             },
             "employment_type": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -518,7 +518,7 @@
               "label": "Employment Type",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "employment_type",
-              "position": 7,
+              "position": 6,
               "sourceData": "Full Time"
             },
             "end_date": {
@@ -540,8 +540,8 @@
               "label": "End Date",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "end_date",
-              "position": 2,
-              "sourceData": "02/2021"
+              "position": 1,
+              "sourceData": "12/2007"
             },
             "job_title": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -562,8 +562,8 @@
               "label": "Job Title",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "job_title",
-              "position": 4,
-              "sourceData": "Restaurant Partnership Executives"
+              "position": 3,
+              "sourceData": "Solution Architect"
             },
             "location": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -584,8 +584,8 @@
               "label": "Location",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "location",
-              "position": 3,
-              "sourceData": ""
+              "position": 2,
+              "sourceData": "Hong Kong, Taiwan"
             },
             "location_type": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -606,8 +606,8 @@
               "label": "Location Type",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "location_type",
-              "position": 6,
-              "sourceData": ""
+              "position": 5,
+              "sourceData": "On-site"
             },
             "responsibilities": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -628,8 +628,8 @@
               "label": "Responsibilities",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "responsibilities",
-              "position": 8,
-              "sourceData": "Acquire restaurant partner, manage the relationship and build a business together with restaurants. Achieve a win-win situation with partners. High performance with around 250 restaurants sign-up within a year. Tried to reach out 130% of company monthly target."
+              "position": 7,
+              "sourceData": "Presales focus account: China Airlines, EVA Airways."
             },
             "start_date": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -650,8 +650,8 @@
               "label": "Start Date",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "start_date",
-              "position": 5,
-              "sourceData": "02/2020"
+              "position": 4,
+              "sourceData": "01/2007"
             }
           },
           "dataType": "object",
@@ -667,15 +667,14 @@
           "originalIdentifier": "resume_detail",
           "position": 6,
           "sourceData": {
-            "company": "UBER HONG KONG- UBER EATS",
+            "company": "SITA",
             "employment_type": "Full Time",
-            "end_date": "02/2021",
-            "job_title": "Restaurant Partnership Executives",
-            "location": "",
-            "location_type": "",
-            "responsibilities": "Acquire restaurant partner, manage the relationship and build a business together with restaurants. Achieve a win-win situation with partners. High performance with around 250 restaurants sign-up within a year. Tried to reach out 130% of company monthly target.",
-            "start_date": "02/2020",
-            "tenure": 1
+            "end_date": "12/2007",
+            "job_title": "Solution Architect",
+            "location": "Hong Kong, Taiwan",
+            "location_type": "On-site",
+            "responsibilities": "Presales focus account: China Airlines, EVA Airways.",
+            "start_date": "01/2007"
           }
         },
         "role_id": {
