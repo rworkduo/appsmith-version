@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM person.\"work_experiences\"\nWHERE (\n    \"id\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"talent_id\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"id\" = '{{data_table.searchText || \"\"}}' \n    OR \"talent_id\" = '{{data_table.searchText || \"\"}}'\n) \nAND \"talent_id\" = '{{talent_table.selectedRow.id}}' \nAND deleted_at is Null\nORDER BY \"{{data_table.sortOrder.column || 'index'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM person.\"work_experiences\"\nWHERE (\n    \"id\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"id\" = '{{data_table.searchText || \"\"}}'\n    OR \"company_id\" ilike '%{{data_table.searchText || \"\"}}%'\n    OR \"company_id\" = '{{data_table.searchText || \"\"}}'\n    OR \"resume_detail\" ilike '%{{data_table.searchText || \"\"}}%'\n) \nAND \"talent_id\" = '{{talent_table.selectedRow.id}}' \nAND deleted_at is Null\nORDER BY \"{{data_table.sortOrder.column || 'index'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

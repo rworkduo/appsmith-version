@@ -1,5 +1,13 @@
 SELECT * FROM person."talents"
-WHERE "full_name" ilike '%{{talent_table.searchText || ""}}%' AND deleted_at is Null
+WHERE (
+    "full_name" ilike '%{{talent_table.searchText || ""}}%' 
+    OR "id" ilike '%{{talent_table.searchText || ""}}%' 
+    OR "id" = '{{talent_table.searchText || ""}}'
+    OR "email" ilike '%{{talent_table.searchText || ""}}%' 
+    OR "workspace_id" ilike '%{{talent_table.searchText || ""}}%' 
+    OR "workspace_id" = '{{talent_table.searchText || ""}}'
+) 
+AND deleted_at is Null
 ORDER BY "{{talent_table.sortOrder.column || 'id'}}" {{talent_table.sortOrder.order || 'ASC'}}
 LIMIT {{talent_table.pageSize}}
 OFFSET {{(talent_table.pageNo - 1) * talent_table.pageSize}};

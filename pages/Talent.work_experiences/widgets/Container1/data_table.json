@@ -33,14 +33,15 @@
     "created_at",
     "updated_at",
     "deleted_at",
-    "customColumn1"
+    "customColumn1",
+    "workspace_id"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1744182905334,
+  "columnUpdatedAt": 1744186589767,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -124,6 +125,9 @@
     },
     {
       "key": "primaryColumns.company_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.workspace_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -562,6 +566,40 @@
       "label": "updated_at",
       "notation": "standard",
       "originalId": "updated_at",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "workspace_id": {
+      "alias": "workspace_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"workspace_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "workspace_id",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "workspace_id",
+      "notation": "standard",
+      "originalId": "workspace_id",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

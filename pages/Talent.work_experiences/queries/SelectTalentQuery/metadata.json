@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM person.\"talents\"\nWHERE \"full_name\" ilike '%{{talent_table.searchText || \"\"}}%' AND deleted_at is Null\nORDER BY \"{{talent_table.sortOrder.column || 'id'}}\" {{talent_table.sortOrder.order || 'ASC'}}\nLIMIT {{talent_table.pageSize}}\nOFFSET {{(talent_table.pageNo - 1) * talent_table.pageSize}};",
+      "body": "SELECT * FROM person.\"talents\"\nWHERE (\n    \"full_name\" ilike '%{{talent_table.searchText || \"\"}}%' \n    OR \"id\" ilike '%{{talent_table.searchText || \"\"}}%' \n    OR \"id\" = '{{talent_table.searchText || \"\"}}'\n    OR \"email\" ilike '%{{talent_table.searchText || \"\"}}%' \n    OR \"workspace_id\" ilike '%{{talent_table.searchText || \"\"}}%' \n    OR \"workspace_id\" = '{{talent_table.searchText || \"\"}}'\n) \nAND deleted_at is Null\nORDER BY \"{{talent_table.sortOrder.column || 'id'}}\" {{talent_table.sortOrder.order || 'ASC'}}\nLIMIT {{talent_table.pageSize}}\nOFFSET {{(talent_table.pageNo - 1) * talent_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

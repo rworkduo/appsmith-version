@@ -1,9 +1,10 @@
 SELECT * FROM person."work_experiences"
 WHERE (
     "id" ilike '%{{data_table.searchText || ""}}%' 
-    OR "talent_id" ilike '%{{data_table.searchText || ""}}%' 
-    OR "id" = '{{data_table.searchText || ""}}' 
-    OR "talent_id" = '{{data_table.searchText || ""}}'
+    OR "id" = '{{data_table.searchText || ""}}'
+    OR "company_id" ilike '%{{data_table.searchText || ""}}%'
+    OR "company_id" = '{{data_table.searchText || ""}}'
+    OR "resume_detail" ilike '%{{data_table.searchText || ""}}%'
 ) 
 AND "talent_id" = '{{talent_table.selectedRow.id}}' 
 AND deleted_at is Null
