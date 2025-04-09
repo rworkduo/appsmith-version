@@ -221,6 +221,15 @@
       "key": "schema.__root_schema__.children.workspace_id.accentColor"
     },
     {
+      "key": "schema.__root_schema__.children.resume_detail.children.tenure.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.resume_detail.children.tenure.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.resume_detail.children.tenure.accentColor"
+    },
+    {
       "key": "schema.__root_schema__.children.resume_detail.children.company.defaultValue"
     },
     {
@@ -294,6 +303,15 @@
     },
     {
       "key": "schema.__root_schema__.children.resume_detail.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.company_name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.company_name.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.company_name.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -333,7 +351,7 @@
   "leftColumn": 42,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "onSubmit": "{{UpdateQuery.run(() => SelectTalentWorkExpQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
   "originalBottomRow": 86,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
@@ -377,6 +395,28 @@
           "originalIdentifier": "company_id",
           "position": 5,
           "sourceData": "muzmj37otl06w3up3l0qfwmu"
+        },
+        "company_name": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "company_name",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.company_name))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "company_name",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Company Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "company_name",
+          "position": 11,
+          "sourceData": ""
         },
         "created_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -496,8 +536,8 @@
               "label": "Company",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "company",
-              "position": 0,
-              "sourceData": "SITA"
+              "position": 1,
+              "sourceData": "PCCW Solution Limited"
             },
             "employment_type": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -518,8 +558,8 @@
               "label": "Employment Type",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "employment_type",
-              "position": 6,
-              "sourceData": "Full Time"
+              "position": 7,
+              "sourceData": ""
             },
             "end_date": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -540,8 +580,8 @@
               "label": "End Date",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "end_date",
-              "position": 1,
-              "sourceData": "12/2007"
+              "position": 2,
+              "sourceData": "08/2020"
             },
             "job_title": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -562,8 +602,8 @@
               "label": "Job Title",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "job_title",
-              "position": 3,
-              "sourceData": "Solution Architect"
+              "position": 4,
+              "sourceData": "Solution Developer"
             },
             "location": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -584,8 +624,8 @@
               "label": "Location",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "location",
-              "position": 2,
-              "sourceData": "Hong Kong, Taiwan"
+              "position": 3,
+              "sourceData": ""
             },
             "location_type": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -606,8 +646,8 @@
               "label": "Location Type",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "location_type",
-              "position": 5,
-              "sourceData": "On-site"
+              "position": 6,
+              "sourceData": ""
             },
             "responsibilities": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -628,8 +668,8 @@
               "label": "Responsibilities",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "responsibilities",
-              "position": 7,
-              "sourceData": "Presales focus account: China Airlines, EVA Airways."
+              "position": 8,
+              "sourceData": "Develop cloud application using Salesforce"
             },
             "start_date": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -650,8 +690,30 @@
               "label": "Start Date",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "start_date",
-              "position": 4,
-              "sourceData": "01/2007"
+              "position": 5,
+              "sourceData": "07/2020"
+            },
+            "tenure": {
+              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "accessor": "tenure",
+              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "boxShadow": "none",
+              "children": {},
+              "dataType": "number",
+              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.resume_detail.tenure))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "fieldType": "Number Input",
+              "iconAlign": "left",
+              "identifier": "tenure",
+              "isCustomField": false,
+              "isDisabled": false,
+              "isRequired": false,
+              "isSpellCheck": false,
+              "isVisible": true,
+              "label": "Tenure",
+              "labelTextSize": "0.875rem",
+              "originalIdentifier": "tenure",
+              "position": 0,
+              "sourceData": 0.08
             }
           },
           "dataType": "object",
@@ -667,14 +729,15 @@
           "originalIdentifier": "resume_detail",
           "position": 6,
           "sourceData": {
-            "company": "SITA",
-            "employment_type": "Full Time",
-            "end_date": "12/2007",
-            "job_title": "Solution Architect",
-            "location": "Hong Kong, Taiwan",
-            "location_type": "On-site",
-            "responsibilities": "Presales focus account: China Airlines, EVA Airways.",
-            "start_date": "01/2007"
+            "company": "PCCW Solution Limited",
+            "employment_type": "",
+            "end_date": "08/2020",
+            "job_title": "Solution Developer",
+            "location": "",
+            "location_type": "",
+            "responsibilities": "Develop cloud application using Salesforce",
+            "start_date": "07/2020",
+            "tenure": 0.08
           }
         },
         "role_id": {

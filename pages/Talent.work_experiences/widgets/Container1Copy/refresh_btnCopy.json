@@ -23,7 +23,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 60,
-  "onClick": "{{SelectQuery.run()}}",
+  "onClick": "{{SelectTalentWorkExpQuery.run()}}",
   "parentColumnSpace": 12.0703125,
   "parentId": "c7ouja01a4",
   "parentRowSpace": 10,

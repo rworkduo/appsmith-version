@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67eb7f1309ccec16fed91dbe_c219683d-865a-4bfa-a152-001600951d6c",
-  "id": "Talent.work_experiences_SelectQuery",
+  "id": "Talent.work_experiences_SelectTalentWorkExpQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "SelectQuery",
+    "name": "SelectTalentWorkExpQuery",
     "pageId": "Talent.work_experiences",
     "userSetOnLoad": true
   }
