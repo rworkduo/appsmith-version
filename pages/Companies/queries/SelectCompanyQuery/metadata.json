@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67eb7f1309ccec16fed91dbe_81a320c2-fd03-440a-82db-177f03037bdb",
-  "id": "Companies_SelectQuery",
+  "id": "Companies_SelectCompanyQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "SelectQuery",
+    "name": "SelectCompanyQuery",
     "pageId": "Companies",
     "userSetOnLoad": true
   }

@@ -327,7 +327,7 @@
   "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "onSubmit": "{{UpdateQuery.run(() => SelectTalentQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
   "originalBottomRow": 86,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
@@ -594,21 +594,35 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "array",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.links))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Multiselect",
           "identifier": "links",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Links",
           "labelTextSize": "0.875rem",
+          "options": [
+            {
+              "label": "Blue",
+              "value": "BLUE"
+            },
+            {
+              "label": "Green",
+              "value": "GREEN"
+            },
+            {
+              "label": "Red",
+              "value": "RED"
+            }
+          ],
           "originalIdentifier": "links",
           "position": 11,
-          "sourceData": ""
+          "serverSideFiltering": false,
+          "sourceData": []
         },
         "personal_information": {
           "accessor": "personal_information",

@@ -1,11 +1,11 @@
 {
   "gitSyncId": "67eb7f1309ccec16fed91dbe_7bc7b2b4-a1fa-49e1-b818-f340623cc62c",
-  "id": "Talents_SelectQuery",
+  "id": "Talents_SelectTalentQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM person.\"talents\"\nWHERE \"email\" ilike '%{{data_table.searchText || \"\"}}%' OR \"full_name\" ilike '%{{data_table.searchText || \"\"}}%' OR \"id\" = '{{data_table.searchText || \"\"}}'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM person.\"talents\"\nWHERE (\n    \"email\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"full_name\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"id\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"id\" = '{{data_table.searchText || \"\"}}'\n    OR \"workspace_id\" ilike '%{{data_table.searchText || \"\"}}%' \n    OR \"workspace_id\" = '{{data_table.searchText || \"\"}}'\n)\nAND deleted_at is Null\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "SelectQuery",
+    "name": "SelectTalentQuery",
     "pageId": "Talents",
     "userSetOnLoad": true
   }
