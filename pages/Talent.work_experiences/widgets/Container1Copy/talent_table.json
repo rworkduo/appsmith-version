@@ -73,7 +73,7 @@
       "borderRadius": "0px",
       "boxShadow": "none",
       "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
+      "buttonLabel": "{{talent_workexp_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
       "buttonLabelColor": "#FFFFFF",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",

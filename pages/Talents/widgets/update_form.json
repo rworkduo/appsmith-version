@@ -294,6 +294,141 @@
     },
     {
       "key": "schema.__root_schema__.children.customField1.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.birth_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.birth_date.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.birth_date.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.birth_year.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.birth_year.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.birth_year.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.first_name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.first_name.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.first_name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.headline.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.headline.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.headline.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.industry.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.industry.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.industry.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.inferred_salary.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.inferred_salary.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.inferred_salary.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.inferred_years_experience.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.inferred_years_experience.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.inferred_years_experience.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.last_initial.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.last_initial.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.last_initial.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.last_name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.last_name.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.last_name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.middle_initial.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.middle_initial.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.middle_initial.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.middle_name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.middle_name.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.middle_name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.sex.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.sex.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.sex.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.summary.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.summary.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.summary.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.title.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.title.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.title.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -316,7 +451,7 @@
       "key": "onSubmit"
     }
   ],
-  "fieldLimitExceeded": true,
+  "fieldLimitExceeded": false,
   "fixedFooter": true,
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
@@ -370,6 +505,50 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "address",
           "position": 9
+        },
+        "birth_date": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "birth_date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.birth_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "birth_date",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Birth Date",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "birth_date",
+          "position": 19,
+          "sourceData": null
+        },
+        "birth_year": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "birth_year",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.birth_year))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "birth_year",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Birth Year",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "birth_year",
+          "position": 20,
+          "sourceData": null
         },
         "created_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -523,6 +702,28 @@
           "position": 1,
           "sourceData": "kelly602summersummer@gmail.com"
         },
+        "external_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "external_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.external_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "external_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "External Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "external_id",
+          "position": 33,
+          "sourceData": "1121537634"
+        },
         "external_source": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "external_source",
@@ -543,6 +744,28 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "external_source",
           "position": 18
+        },
+        "first_name": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "first_name",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.first_name))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "first_name",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "First Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "first_name",
+          "position": 21,
+          "sourceData": null
         },
         "full_name": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -565,6 +788,138 @@
           "originalIdentifier": "full_name",
           "position": 2,
           "sourceData": "Hoi Ki (Kelly) Chan"
+        },
+        "headline": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "headline",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.headline))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "headline",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Headline",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "headline",
+          "position": 22,
+          "sourceData": null
+        },
+        "industry": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "industry",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.industry))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "industry",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Industry",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "industry",
+          "position": 23,
+          "sourceData": null
+        },
+        "inferred_salary": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "inferred_salary",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.inferred_salary))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "inferred_salary",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Inferred Salary",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "inferred_salary",
+          "position": 24,
+          "sourceData": null
+        },
+        "inferred_years_experience": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "inferred_years_experience",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.inferred_years_experience))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "inferred_years_experience",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Inferred Years Experience",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "inferred_years_experience",
+          "position": 25,
+          "sourceData": null
+        },
+        "last_initial": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "last_initial",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.last_initial))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "last_initial",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Last Initial",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "last_initial",
+          "position": 26,
+          "sourceData": null
+        },
+        "last_name": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "last_name",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.last_name))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "last_name",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Last Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "last_name",
+          "position": 27,
+          "sourceData": null
         },
         "linkedin": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -623,6 +978,50 @@
           "position": 11,
           "serverSideFiltering": false,
           "sourceData": []
+        },
+        "middle_initial": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "middle_initial",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.middle_initial))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "middle_initial",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Middle Initial",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "middle_initial",
+          "position": 28,
+          "sourceData": null
+        },
+        "middle_name": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "middle_name",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.middle_name))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "middle_name",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Middle Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "middle_name",
+          "position": 29,
+          "sourceData": null
         },
         "personal_information": {
           "accessor": "personal_information",
@@ -710,6 +1109,50 @@
           "position": 15,
           "sourceData": "A graduated student of BA (Hons) in English for Business and Professional Communication in PolyU with experience in Administrative/ Customer Service and Influencer management at well-known MNC, Local Fashion Company, and luxury e-commerce start-up. Experienced on social media platforms such as Facebook, Instagram, and YouTube. Comfortable working with a team and independently in a fast paced environment. Effective communicator with a creative mind and keen attention for detail. Willing to learn and seeking opportunities to participate in the Fashion & Beauty industry with passion."
         },
+        "sex": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "sex",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.sex))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "sex",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Sex",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "sex",
+          "position": 30,
+          "sourceData": null
+        },
+        "summary": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "summary",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.summary))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "summary",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Summary",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "summary",
+          "position": 31,
+          "sourceData": null
+        },
         "tags": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "tags",
@@ -730,6 +1173,28 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "tags",
           "position": 16
+        },
+        "title": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "title",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.title))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "title",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Title",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "title",
+          "position": 32,
+          "sourceData": "student"
         },
         "updated_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

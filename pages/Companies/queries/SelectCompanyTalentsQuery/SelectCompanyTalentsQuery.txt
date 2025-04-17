@@ -2,7 +2,7 @@ SELECT person."talents".*
 FROM person."talents" 
 INNER JOIN person."work_experiences" as we 
     ON we.talent_id = person."talents".id
-WHERE we."company_id" = '{{data_table.selectedRow.id}}' 
+WHERE we."company_id" = '{{company_table.selectedRow.id}}' 
     AND (
         person."talents"."full_name" ilike '%{{talents_matchcompany.searchText || ""}}%' 
         OR person."talents"."id" ilike '%{{talents_matchcompany.searchText || ""}}%' 

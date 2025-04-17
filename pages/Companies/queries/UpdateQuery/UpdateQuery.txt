@@ -10,4 +10,4 @@ UPDATE person."companies" SET
 		"employee_count" = '{{update_form.fieldState.employee_count.isVisible ? update_form.formData.employee_count : update_form.sourceData.employee_count}}',
 		"employee_growth_rate" = '{{update_form.fieldState.employee_growth_rate.isVisible ? update_form.formData.employee_growth_rate : update_form.sourceData.employee_growth_rate}}',
 		"founded_year" = '{{update_form.fieldState.founded_year.isVisible ? update_form.formData.founded_year : update_form.sourceData.founded_year}}'
-	WHERE "id" = {{data_table.selectedRow.id}};
+	WHERE "id" = {{company_table.selectedRow.id}};

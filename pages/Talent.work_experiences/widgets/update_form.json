@@ -221,15 +221,6 @@
       "key": "schema.__root_schema__.children.workspace_id.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.resume_detail.children.tenure.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.tenure.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.tenure.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.resume_detail.children.company.defaultValue"
     },
     {
@@ -237,15 +228,6 @@
     },
     {
       "key": "schema.__root_schema__.children.resume_detail.children.company.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.end_date.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.end_date.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.end_date.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.resume_detail.children.location.defaultValue"
@@ -264,33 +246,6 @@
     },
     {
       "key": "schema.__root_schema__.children.resume_detail.children.job_title.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.start_date.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.start_date.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.start_date.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.location_type.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.location_type.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.location_type.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.employment_type.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.employment_type.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.resume_detail.children.employment_type.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.resume_detail.children.responsibilities.defaultValue"
@@ -312,6 +267,24 @@
     },
     {
       "key": "schema.__root_schema__.children.company_name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_source.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_source.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_source.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -345,7 +318,7 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "{{!!data_table.selectedRow.id}}",
+  "isVisible": "{{!!talent_workexp_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
   "leftColumn": 42,
@@ -488,6 +461,50 @@
           "sourceData": "2018-11-01",
           "timePrecision": "minute"
         },
+        "external_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "external_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.external_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "external_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "External Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "external_id",
+          "position": 12,
+          "sourceData": "1121537634"
+        },
+        "external_source": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "external_source",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.external_source))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "external_source",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "External Source",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "external_source",
+          "position": 13,
+          "sourceData": "BRIGHT_DATA__PERSON_LINKEDIN"
+        },
         "index": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "index",
@@ -539,50 +556,6 @@
               "position": 1,
               "sourceData": "PCCW Solution Limited"
             },
-            "employment_type": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "accessor": "employment_type",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.resume_detail.employment_type))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "fieldType": "Text Input",
-              "iconAlign": "left",
-              "identifier": "employment_type",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "Employment Type",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "employment_type",
-              "position": 7,
-              "sourceData": ""
-            },
-            "end_date": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "accessor": "end_date",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.resume_detail.end_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "fieldType": "Text Input",
-              "iconAlign": "left",
-              "identifier": "end_date",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "End Date",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "end_date",
-              "position": 2,
-              "sourceData": "08/2020"
-            },
             "job_title": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
               "accessor": "job_title",
@@ -627,28 +600,6 @@
               "position": 3,
               "sourceData": ""
             },
-            "location_type": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "accessor": "location_type",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.resume_detail.location_type))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "fieldType": "Text Input",
-              "iconAlign": "left",
-              "identifier": "location_type",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "Location Type",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "location_type",
-              "position": 6,
-              "sourceData": ""
-            },
             "responsibilities": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
               "accessor": "responsibilities",
@@ -670,50 +621,6 @@
               "originalIdentifier": "responsibilities",
               "position": 8,
               "sourceData": "Develop cloud application using Salesforce"
-            },
-            "start_date": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "accessor": "start_date",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.resume_detail.start_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "fieldType": "Text Input",
-              "iconAlign": "left",
-              "identifier": "start_date",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "Start Date",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "start_date",
-              "position": 5,
-              "sourceData": "07/2020"
-            },
-            "tenure": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "accessor": "tenure",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "number",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.resume_detail.tenure))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "fieldType": "Number Input",
-              "iconAlign": "left",
-              "identifier": "tenure",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "Tenure",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "tenure",
-              "position": 0,
-              "sourceData": 0.08
             }
           },
           "dataType": "object",
@@ -877,7 +784,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
+  "sourceData": "{{_.omit(talent_workexp_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -885,7 +792,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Work Experience for Selected Talent\nWork_experience_id: {{data_table.selectedRow.id}}",
+  "title": "Update Work Experience for Selected Talent\nWork_experience_id: {{talent_workexp_table.selectedRow.id}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",
