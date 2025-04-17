@@ -149,9 +149,6 @@
       "key": "schema.__root_schema__.children.tags.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.tags.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.is_active.defaultValue"
     },
     {
@@ -398,7 +395,55 @@
       "key": "schema.__root_schema__.children.id.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.social_profiles.accentColor"
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.children.url.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.children.url.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.children.url.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.children.follower_count.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.children.follower_count.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.children.follower_count.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.children.LINKEDIN.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.social_profiles.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_source.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_source.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.external_source.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.tags.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -578,6 +623,50 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "employee_growth_rate",
           "position": 10
+        },
+        "external_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "external_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.external_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "external_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "External Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "external_id",
+          "position": 31,
+          "sourceData": "dataxquadai"
+        },
+        "external_source": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "external_source",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.external_source))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "external_source",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "External Source",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "external_source",
+          "position": 32,
+          "sourceData": "BRIGHT_DATA__PERSON_LINKEDIN"
         },
         "founded_year": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -992,40 +1081,100 @@
           "position": 30
         },
         "social_profiles": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "social_profiles",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
-          "children": {},
-          "dataType": "array",
+          "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "cellBoxShadow": "none",
+          "children": {
+            "LINKEDIN": {
+              "accessor": "LINKEDIN",
+              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "boxShadow": "none",
+              "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "cellBoxShadow": "none",
+              "children": {
+                "follower_count": {
+                  "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "accessor": "follower_count",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "boxShadow": "none",
+                  "children": {},
+                  "dataType": "string",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.social_profiles.LINKEDIN.follower_count))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "fieldType": "Text Input",
+                  "iconAlign": "left",
+                  "identifier": "follower_count",
+                  "isCustomField": false,
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isSpellCheck": false,
+                  "isVisible": true,
+                  "label": "Follower Count",
+                  "labelTextSize": "0.875rem",
+                  "originalIdentifier": "follower_count",
+                  "position": 1,
+                  "sourceData": "166"
+                },
+                "url": {
+                  "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "accessor": "url",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "boxShadow": "none",
+                  "children": {},
+                  "dataType": "string",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.social_profiles.LINKEDIN.url))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "fieldType": "Text Input",
+                  "iconAlign": "left",
+                  "identifier": "url",
+                  "isCustomField": false,
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isSpellCheck": false,
+                  "isVisible": true,
+                  "label": "Url",
+                  "labelTextSize": "0.875rem",
+                  "originalIdentifier": "url",
+                  "position": 0,
+                  "sourceData": "https://www.linkedin.com/company/dataxquadai"
+                }
+              },
+              "dataType": "object",
+              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.social_profiles.LINKEDIN))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "fieldType": "Object",
+              "identifier": "LINKEDIN",
+              "isCustomField": false,
+              "isDisabled": false,
+              "isRequired": false,
+              "isVisible": true,
+              "label": "LINKEDIN",
+              "labelTextSize": "0.875rem",
+              "originalIdentifier": "LINKEDIN",
+              "position": 0,
+              "sourceData": {
+                "follower_count": "166",
+                "url": "https://www.linkedin.com/company/dataxquadai"
+              }
+            }
+          },
+          "dataType": "object",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.social_profiles))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Object",
           "identifier": "social_profiles",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
           "isVisible": true,
           "label": "Social Profiles",
           "labelTextSize": "0.875rem",
-          "options": [
-            {
-              "label": "Blue",
-              "value": "BLUE"
-            },
-            {
-              "label": "Green",
-              "value": "GREEN"
-            },
-            {
-              "label": "Red",
-              "value": "RED"
-            }
-          ],
           "originalIdentifier": "social_profiles",
-          "position": 23,
-          "serverSideFiltering": false,
-          "sourceData": []
+          "position": 22,
+          "sourceData": {
+            "LINKEDIN": {
+              "follower_count": "166",
+              "url": "https://www.linkedin.com/company/dataxquadai"
+            }
+          }
         },
         "stock_exchange": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1119,32 +1268,18 @@
           "children": {},
           "dataType": "array",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tags))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
           "identifier": "tags",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Tags",
           "labelTextSize": "0.875rem",
-          "options": [
-            {
-              "label": "Blue",
-              "value": "BLUE"
-            },
-            {
-              "label": "Green",
-              "value": "GREEN"
-            },
-            {
-              "label": "Red",
-              "value": "RED"
-            }
-          ],
           "originalIdentifier": "tags",
           "position": 3,
-          "serverSideFiltering": false,
           "sourceData": []
         },
         "type": {
